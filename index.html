@@ -1,5 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RevendeSells</title>
+<style>
+/* Estilos generales */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+header h1 {
+margin: 0;
+}
+
+/* Sección de productos */
+.products {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 20px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+margin: 15px;
+width: 200px;
+overflow: hidden;
+text-align: center;
+transition: transform 0.2s;
+}
+
+.product-card:hover {
+transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.product-image {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+/* Descripción y precio */
+.product-info {
+padding: 10px;
+}
+
+/* Footer */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 15px;
+margin-top: 20px;
+}
+</style>
+</head>
 <body>
-Hola señores
+<!-- Cabecera con título -->
+<header>
+<h1>RevendeSells</h1>
+</header>
+
+<!-- Sección de productos -->
+<section class="products">
+<!-- Tarjeta de producto -->
+<div class="product-card">
+<!-- Pon tu foto en la siguiente línea, reemplazando src="tu-foto.jpg" -->
+<img src="perfumes.jpg" alt="Producto 1" class="product-image" />
+<div class="product-info">
+<h3>Producto 1</h3>
+<p>Descripción del producto 1</p>
+<p>Precio: $XX.XX</p>
+</div>
+</div>
+<!-- Agrega más tarjetas duplicando este bloque y cambiando las fotos y detalles -->
+<div class="product-card">
+<!-- Reemplaza src="tu-foto.jpg" con la ruta de tu propia foto -->
+<img src="reventa.jpg" alt="Producto 2" class="product-image" />
+<div class="product-info">
+<h3>Producto 2</h3>
+<p>Descripción del producto 2</p>
+<p>Precio: $XX.XX</p>
+</div>
+</div>
+<!-- Añade más productos según tus necesidades -->
+</section>
+
+<!-- Pie de página -->
+<footer>
+<p>&copy; 2024 RevendeSells. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
