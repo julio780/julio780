@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Catálogo de Perfumes</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f8f8f8;
+margin: 0;
+padding: 20px;
+}
 
+h1 {
+text-align: center;
+color: #333;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.perfume-card {
+background-color: #fff;
+border-radius: 8px;
+overflow: hidden;
+width: 200px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: transform 0.2s;
+}
+
+.perfume-card:hover {
+transform: scale(1.05);
+}
+
+/* Cambia la ruta de la imagen en src="ruta/a/la/imagen.jpg" por la ruta de tu foto */
+.perfume-image {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.perfume-info {
+padding: 10px;
+text-align: center;
+}
+
+.perfume-name {
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+.price {
+color: #e91e63;
+font-size: 1.2em;
+margin-bottom: 10px;
+}
+
+/* Estilo para el precio */
+.precio {
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>Catálogo de Perfumes</h1>
+
+<div class="container">
+<!-- Repite esta sección por cada perfume y edita los datos -->
+<div class="perfume-card">
+<!-- Pon la ruta de tu foto en src="" -->
+<img src="ruta/a/tu/imagen1.jpg" alt="Perfume 1" class="perfume-image" />
+<div class="perfume-info">
+<!-- Escribe aquí el nombre del perfume -->
+<div class="perfume-name">Nombre del Perfume 1</div>
+<!-- Precio fijo -->
+<div class="price">$39.99</div>
+</div>
+</div>
+
+<div class="perfume-card">
+<img src="ruta/a/tu/imagen2.jpg" alt="Perfume 2" class="perfume-image" />
+<div class="perfume-info">
+<div class="perfume-name">Nombre del Perfume 2</div>
+<div class="price">$39.99</div>
+</div>
+</div>
+
+<!-- Agrega más perfumes copiando la estructura anterior -->
+</div>
+
+</body>
+</html>
